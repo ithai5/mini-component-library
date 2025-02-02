@@ -18,12 +18,12 @@ const Select = ({label, value, onChange, children}) => {
             >
                 {children}
             </NativeSelect>
-            <PresentationalBit>
+            <CustomizedSelect>
                 {displayedValue}
                 <IconWrapper>
                     <Icon id="chevron-down"/>
                 </IconWrapper>
-            </PresentationalBit>
+            </CustomizedSelect>
         </Wrapper>
     );
 };
@@ -50,7 +50,7 @@ const NativeSelect = styled.select`
   border-radius: 8px;
 `
 
-const PresentationalBit = styled.div`
+const CustomizedSelect = styled.div`
   display: flex;
   align-items: center;
   padding: 12px 16px;
