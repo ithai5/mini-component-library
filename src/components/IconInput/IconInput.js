@@ -34,27 +34,20 @@ const Wrapper = styled.label`
 `
 
 const Input = styled.input`
-  //width: 100%;/*var(--width);*/
   border: none;
   border-bottom: 1px solid ${COLORS.black};
   font-size: var(--font-size);
   width: var(--width);
-  
   outline-offset: 2px;
   &[type="text"] {
     padding-left: ${props => (props.size === 'small' ? `18px` : '30px')};
     font-size: var(--font-size);
     font-weight: 700;
-    };
+  };
+  
   &::placeholder {
     color: ${COLORS.gray500};
     font-weight: 400;
-  }
-
-/*    &::placeholder {
-      color: ${COLORS.black};
-      font-weight: 400;
-    }*/
   }
 `
 const IconWrapper = styled.div`
